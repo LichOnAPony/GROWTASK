@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Growtask</title>
+    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body >
+    <header id="nav" class="nav"> 
+        <div id="nav__scroll" class="nav__scroll">
+            <img id="nav__logo" class="nav__logo" src="images/logo.png" alt="logo Growtask">
+            <a href="#wellcome" class="nav__scroll_up">Наверх</a>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <h2 id="menuTitle" class="menu-title">Меню</h2>
+            <button onclick="menu()" id="menu" class="menu">
+                <img id="menuImg" src="images/menu.png" alt="menu">
+            </button>
+        </div>
+        <ul id="menuList" class="nav__list">
+            <li class="nav__list_item"><a class="link" href="#aboutVacancy">Текст и картинки</a></li>
+            <li class="nav__list_item"><a class="link" href="#slider">Пример слайдера</a></li>
+            <li class="nav__list_item"><a class="link" href="#buttton-image">Кнопки и картинки</a></li>
+            <li class="nav__list_item"><a class="link" href="#questions ">Вопрос — ответ</a></li>
+            <li class="nav__list_item"><a id="toForm" class="link-active" href="#form">К форме</a></li>
+            <div id="menuMessengers" class="menu__messengers">
+                <a class="form__messengers_icon" href="vk.com/growtask"><img src="images/vk.png" alt="vk icon"></a>
+                <a class="form__messengers_icon" href="https://t.me/growtask"><img src="images/Tg.png" alt="tg icon"></a>
+            </div>
+        </ul>
+       
+    </header>
+    <main>
+        <section id="wellcome" class="wellcome">
+            <div class="wellcome__container">
+                <h1 class="h1">Покажи нам чудеса<br><span class="h1-bl">своей вёрстки</span></h1>
+                <p class="h-text h1-text">Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя всё получится.</p>
+                <div class="wellcome__container__scrollToForm">
+                    <p class="form-text">Покажи скролл на <span class="form-text-bl">до формы:</span></p>
+                    <a class="link-active" href="#form">К форме</a>
+                </div>
+            </div>
+            <div class="wellcome__container">
+                    <img class="images wellcome__container_images " src="images/note_wellcome.png" alt="notebook">
+                    <img class="images wellcome__container_images "src="images/image_wellcome.png" alt="image">
+                    <img id="last-image" class="images wellcome__container_images"src="images/hands_wellcome.png" alt="hands">
+            </div>
+        </section>
+        <section id="aboutVacancy" class="aboutVacancy">
+            <div class="aboutVacancy__container">
+                <div>
+                    <h2 class="aboutVacancy__container_h2">Про вакансию</h2>
+        
+                    <p class="h-text">Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно же, поможем. <br><br>  Напомним про условия:</p>
+                </div>
+                <div>
+                    <div class="aboutVacancy__container_about">
+                                <p class="about-container__text-bl">20 000</p> 
+                                <p class="about-container__text-bottom">Твой оклад на время стажировки (Возможны премии)</p>
+                            </div>
+                            <div class="aboutVacancy__container_about">
+                                <p class="about-container__text-bl">5/2</p>
+                                <p class="about-container__text-bottom">Рабочий график</p>
+                            </div>
+                            <div class="aboutVacancy__container_about">
+                                <p class="about-container__text-bl">8 ч</p>
+                                <p class="about-container__text-bottom">Рабочий день</p>
+                            </div>
+                    </div>
+                </div>
+                
+            <div class="aboutVacancy__container">
+                <div class="aboutVacancy__container_item">
+                    <img class="aboutVacancy__container_images" src="images/1company.png" alt="image company">
+                    <img class="aboutVacancy__container_images" src="images/2company.png" alt="image company">
+                    <img class="aboutVacancy__container_images" src="images/3company.png" alt="image company">
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider__top">
+                <h2 class="slider__h">Сверстай слайдер</h2>
+                <div class="slider__top_buttons">
+                    <button type="button" onclick="back()" class="button"><img src="images/back.png" alt="button"></button>
+                    <button type="button"onclick="next()" class="button"><img src="images/next.png" alt="button"></button>
+                </div>
+            </div>
+            <div id="slider" class="slider__container">
+                <div data-fancybox="images" class="slider__container_item item1">
+                    <p class="slider-item-text">Северная корона</p>
+                </div>
+                <div data-fancybox="images"class="slider__container_item item2" >
+                    <p class="slider-item-text">Moscow barbering school</p>
+                </div>
+                <div data-fancybox="images"class="slider__container_item item3">
+                    <p class="slider-item-text">Rh store</p>
+                </div>
+                <div data-fancybox="images"class="slider__container_item item4">
+                    <p class="slider-item-text">Poolspecial</p>
+                </div>
+                <div data-fancybox="images"class="slider__container_item item5">
+                    <p class="slider-item-text">Rh prod</p>
+                </div>
+            </div>
+        </section>
+        <section id="buttton-image" class="slide-image">
+            <div id="viewImage" class="slide__container">
+                <img id="statickImage" class="slide__container_image"src="images/1forest.png" alt="forest image">
+            </div>
+            <div class="slide__container" >
+                <button onclick="document.getElementById('statickImage').src ='images/1forest.png'" class="slide__container_button">
+                    <img id="image1"src="images/1forest.png" alt="forest icon 1">
+                    <p class="h-text slide-text">Картинка 1</p>
+                </button>
+                <button onclick="document.getElementById('statickImage').src ='images/2forest.png'" class="slide__container_button">
+                    <img id="image2"src="images/2forest.png" alt="forest icon 2">
+                    <p class="h-text slide-text">Картинка 2</p>
+                </button>
+                <button onclick="document.getElementById('statickImage').src ='images/3forest.png'"class="slide__container_button">
+                    <img id="image3"src="images/3forest.png" alt="forest icon 3">
+                    <p class="h-text slide-text">Картинка 3</p>
+                </button>
+            </div>
+        </section>
+        <section id="questions" class="questions">
+            <h2 class="questions__title">Ответы на вопросы</h2>
+            <div class="questions__container">
+
+                <div class="questions__container_item" onmousedown="viewText1()">
+                    <div class="item-visible">
+                         <p class="questions__text "id="text-visible1">У вас много проектов?</p>
+                        <button class="questions__button"><img id="questions__img1" class="questions__img" src="images/plus.png" alt="icon"></button>
+                    </div>
+                    <div class="item-hidden">
+                        <p class="questions__text_hidden" id="hidden1">Какие есть вопросы?</p>
+                    </div>
+                </div>
+                
+                <div class="questions__container_item" onmousedown="viewText2()">
+                    <div class="item-visible">
+                         <p class="questions__text"id="text-visible2">Есть ли карьерный рост?</p>
+                        <button class="questions__button"><img id="questions__img2"class="questions__img" src="images/plus.png" alt="icon"></button>
+                    </div>
+                    <div class="item-hidden">
+                        <p class="questions__text_hidden"id="hidden2">Какие есть вопросы?</p>
+                    </div>
+                </div>
+                
+                <div class="questions__container_item vision" onmousedown="viewText3()">
+                    <div class="item-visible">
+                         <p class="questions__text" id="text-visible3">У вас большой штат?</p>
+                        <button class="questions__button"><img id="questions__img3"class="questions__img" src="images/plus.png" alt="icon"></button>
+                    </div>
+                    <div class="item-hidden">
+                        <p class="questions__text_hidden"id="hidden3">Какие есть вопросы?</p>
+                    </div>
+                </div>
+                
+                <div class="questions__container_item vision" onmousedown="viewText4()">
+                    <div class="item-visible">
+                         <p class="questions__text"id="text-visible4">Какие цели у вашей студии?</p>
+                        <button class="questions__button"><img id="questions__img4"class="questions__img" src="images/plus.png" alt="icon"></button>
+                    </div>
+                    <div class="item-hidden">
+                        <p class="questions__text_hidden"id="hidden4">Какие есть вопросы?</p>
+                    </div>
+                </div>
+        </section>
+        <section class="form">
+            <div class="form__container">
+                <div class="form__container_item item-info">
+                    <h2 class="form__title">Форма ОС</h2>
+                    <p class="form__text-info">Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда: a@growtask.ru</p>          
+                </div>
+                <div class="form__container_item " id="form">        
+                    <form class="item-input" action="mailto:a@growtask.ru">
+                        <input name="quest"  id="quest" placeholder="Напиши вопрос*"required class="form__input" type="text">
+                        <input name="numberOrMail" placeholder="Телефон или почта*"required class="form__input" type="text">
+                        <input name="name" placeholder="Твоё имя*"required class="form__input" type="text">
+                        <input name="messengers" placeholder="Соц.сеть или мессенджер"required class="form__input" type="text">
+                        
+                        <div class="form__send"> 
+                            <input type="submit" value="Отправить заявку" class="link-active submit">
+                            <label for="checkPolitic" class="checkPolitic">  
+                                <input type="checkbox" required class="checkPolitic__input" id="checkPolitic">
+                                <span></span>
+                                Согласие с политикой
+                            </label>
+                        </div>
+                    </form>
+                </div>    
+                <div class="contact">
+                    <p class="form__text-about">Не забудь вставить соц.сети</p>
+                    <div class="form__messengers">
+                        <a class="form__messengers_icon" href="vk.com/growtask"><img src="images/vk.png" alt="vk icon"></a>
+                        <a class="form__messengers_icon" href="https://t.me/growtask"><img src="images/Tg.png" alt="tg icon"></a>
+                    </div>
+                </div>
+                    
+                
+                
+        </section>
+    </main>
+    <script src="settings.js"></script>    
+</body>
+</html>
